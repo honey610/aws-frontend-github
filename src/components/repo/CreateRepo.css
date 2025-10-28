@@ -1,0 +1,13 @@
+body{
+  align-items: center;
+  display: flex;
+  justify-content: center; 
+  min-height: 100vh;        /* Makes body take full height */
+ 
+  margin: 0;    
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
