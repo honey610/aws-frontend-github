@@ -28,7 +28,7 @@ description: "",
        }
        console.log(datatosend);
     
-        const response=await fetch("51.21.194.205:3000/repo/create",{
+        const response=await fetch("https://51.21.194.205:3000/repo/create",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"

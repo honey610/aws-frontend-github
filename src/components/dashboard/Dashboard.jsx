@@ -22,8 +22,8 @@ const Dashboard = () => {
       try {
         setLoading(true);
         const [userRepoRes, allRepoRes] = await Promise.all([
-          fetch(`http://51.21.194.205:3000/repo/user/${userId}`),
-          fetch("http://51.21.194.205:3000/repo/all"),
+          fetch(`https://51.21.194.205:3000/repo/user/${userId}`),
+          fetch("https://51.21.194.205:3000/repo/all"),
         ]);
 
         const userData = await userRepoRes.json();
