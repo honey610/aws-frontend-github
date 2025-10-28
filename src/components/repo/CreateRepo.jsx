@@ -28,7 +28,7 @@ description: "",
        }
        console.log(datatosend);
     
-        const response=await fetch("http://localhost:3000/repo/create",{
+        const response=await fetch("https://main.dq42rpl2h819a.amplifyapp.com/repo/create",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
