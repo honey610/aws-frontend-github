@@ -28,7 +28,7 @@ description: "",
        }
        console.log(datatosend);
     
-        const response=await fetch("/repo/create",{
+        const response=await fetch("https://9a08fhn33e.execute-api.eu-north-1.amazonaws.com/prod/repo/create",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"

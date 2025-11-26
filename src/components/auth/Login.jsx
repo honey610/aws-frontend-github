@@ -20,7 +20,7 @@ const Login = () => {
     setError(null);
 
     try {
-      const res = await axios.post('/login', {
+      const res = await axios.post('https://9a08fhn33e.execute-api.eu-north-1.amazonaws.com/prod/login', {
         email,
         password,
       });

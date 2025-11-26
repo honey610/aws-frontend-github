@@ -28,7 +28,7 @@ const Signup = () => {
     setError(null);
 
     try {
-      const response = await axios.post('/signup', formData);
+      const response = await axios.post('https://9a08fhn33e.execute-api.eu-north-1.amazonaws.com/prod/signup', formData);
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('userId', response.data.userId);
       login({ userId: response.data.userId }, response.data.token);

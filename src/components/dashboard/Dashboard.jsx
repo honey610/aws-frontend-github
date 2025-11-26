@@ -23,8 +23,8 @@ const Dashboard = () => {
       try {
         setLoading(true);
         const [userRepoRes, allRepoRes] = await Promise.all([
-          fetch(`/repo/user/${userId}`),
-          fetch("/repo/all"),
+          fetch(`https://9a08fhn33e.execute-api.eu-north-1.amazonaws.com/prod/repo/user/${userId}`),
+          fetch("https://9a08fhn33e.execute-api.eu-north-1.amazonaws.com/prod/repo/all"),
         ]);
 
         const userData = await userRepoRes.json();
