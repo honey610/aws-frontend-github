@@ -15,7 +15,7 @@ const Profile = () => {
       if (!userId) return;
 
       try {
-        const response = await fetch(`https://9a08fhn33e.execute-api.eu-north-1.amazonaws.com/prod/profile/${userId}`);
+        const response = await fetch(`https://13.50.196.250/profile/${userId}`);
         const data = await response.json();
         setUser(data);
       } catch (error) {

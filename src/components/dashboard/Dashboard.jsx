@@ -17,14 +17,14 @@ const Dashboard = () => {
       return;
     }
 
-    // http://13.50.196.250/repo/user/${userId}
-    // http://13.50.196.250/repo/all
+    // https://13.50.196.250/repo/user/${userId}
+    // https://13.50.196.250/repo/all
     const fetchData = async () => {
       try {
         setLoading(true);
         const [userRepoRes, allRepoRes] = await Promise.all([
-          fetch(`https://9a08fhn33e.execute-api.eu-north-1.amazonaws.com/prod/repo/user/${userId}`),
-          fetch("https://9a08fhn33e.execute-api.eu-north-1.amazonaws.com/prod/repo/all"),
+          fetch(` https://13.50.196.250/repo/user/${userId}`),
+          fetch("https://13.50.196.250/repo/all"),
         ]);
 
         const userData = await userRepoRes.json();

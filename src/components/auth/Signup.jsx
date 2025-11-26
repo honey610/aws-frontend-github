@@ -26,9 +26,9 @@ const Signup = () => {
     e.preventDefault();
     setLoading(true);
     setError(null);
-
+// https://13.50.196.250/signup
     try {
-      const response = await axios.post('https://9a08fhn33e.execute-api.eu-north-1.amazonaws.com/prod/signup', formData);
+      const response = await axios.post('https://13.50.196.250/signup', formData);
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('userId', response.data.userId);
       login({ userId: response.data.userId }, response.data.token);

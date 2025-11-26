@@ -18,9 +18,9 @@ const Login = () => {
   const handleLogin = async () => {
     setLoading(true);
     setError(null);
-
+// https://13.50.196.250/login
     try {
-      const res = await axios.post('https://9a08fhn33e.execute-api.eu-north-1.amazonaws.com/prod/login', {
+      const res = await axios.post('https://13.50.196.250/login', {
         email,
         password,
       });
