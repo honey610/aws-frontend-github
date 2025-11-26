@@ -17,13 +17,14 @@ const Dashboard = () => {
       return;
     }
 
-    
+    // http://13.50.196.250/repo/user/${userId}
+    // http://13.50.196.250/repo/all
     const fetchData = async () => {
       try {
         setLoading(true);
         const [userRepoRes, allRepoRes] = await Promise.all([
-          fetch(`http://13.50.196.250/repo/user/${userId}`),
-          fetch("http://13.50.196.250/repo/all"),
+          fetch(`/repo/user/${userId}`),
+          fetch("/repo/all"),
         ]);
 
         const userData = await userRepoRes.json();

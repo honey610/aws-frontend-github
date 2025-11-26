@@ -28,7 +28,7 @@ const Signup = () => {
     setError(null);
 
     try {
-      const response = await axios.post('http://13.50.196.250/signup', formData);
+      const response = await axios.post('/signup', formData);
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('userId', response.data.userId);
       login({ userId: response.data.userId }, response.data.token);
