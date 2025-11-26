@@ -28,7 +28,7 @@ description: "",
        }
        console.log(datatosend);
     
-        const response=await fetch("https://13.50.196.250/repo/create",{
+        const response=await fetch("http://13.50.196.250/repo/create",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"

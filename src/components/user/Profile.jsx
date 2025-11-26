@@ -15,7 +15,7 @@ const Profile = () => {
       if (!userId) return;
 
       try {
-        const response = await fetch(`https://13.50.196.250/profile/${userId}`);
+        const response = await fetch(`http://13.50.196.250/profile/${userId}`);
         const data = await response.json();
         setUser(data);
       } catch (error) {

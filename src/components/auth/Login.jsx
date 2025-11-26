@@ -20,7 +20,7 @@ const Login = () => {
     setError(null);
 
     try {
-      const res = await axios.post('https://13.50.196.250/login', {
+      const res = await axios.post('http://13.50.196.250/login', {
         email,
         password,
       });
